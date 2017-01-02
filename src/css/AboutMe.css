@@ -1,0 +1,19 @@
+.CardDeck {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 20px;
+}
+
+.mainContainer {
+    width: 100%;
+    align-content: center;
+    padding-top: 30px;
+    align-items: center;
+}
+
+h2 {
+    font-family: fantasy;
+    text-align: center;
+    font-size: xx-large;
+    padding: 10px;
+}
