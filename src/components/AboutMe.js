@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Button, CardHeader, CardFooter, CardBlock,
-    CardTitle, CardText ,Container,CardDeck,ListGroup,ListGroupItem     ,CardSubtitle} from 'reactstrap';
+    CardTitle, CardText ,Container,CardDeck,ListGroup,ListGroupItem ,Col,Row} from 'reactstrap';
 import '../css/AboutMe.css'
 import me from '../images/me.jpg'
 const AboutMe = (props) => {
@@ -8,21 +8,50 @@ const AboutMe = (props) => {
     return (
         <Container className="AboutMeContainer">
                 <CardDeck>
-                    <Card>
+                    <Card >
                         <CardBlock>
-                            <CardTitle>About Me</CardTitle>
-                            <Card>
-                                <CardBlock> 
-                                    <CardText>
-                                        <div className="chip">
-                                            John Doe
-                                        </div>
-                                    </CardText>
-                                </CardBlock>
-                            </Card>
-                         </CardBlock>
+                        <Container>
+                                <Col>
+                                    <Row>
+                                        <Card className="cards">
+                                            <CardTitle>Gist</CardTitle>
+                                            <CardText>I am a Full stack web developer and ML enthusiast with special interest in making apps that consume data and solve real world problems.</CardText>
+                                        </Card>
+                                    </Row>
+                                    <Row>
+                                        <Card className="cards">
+                                            <CardTitle>Interests</CardTitle>
+                                            <CardText>
+                                                <div className="chip">Machine Learning</div>
+                                                <div className="chip">Web Apps</div>
+                                                <div className="chip">Artifical Intelligence</div>
+                                            </CardText>
+                                        </Card>
+                                    </Row>
+                                    <Row>
+                                        <Card className="cards">
+                                            <CardTitle>What I Enjoy</CardTitle>
+                                            <CardText>
+                                                <div className="chip">Everything About Soccer</div>
+                                            </CardText>
+                                        </Card>
+                                    </Row>
+                                    <Row>
+                                        <Card className="cards">
+                                            <CardTitle>Technology Stacks</CardTitle>
+                                            <CardText>
+                                                <div className="chip">Python Frameworks</div>
+                                                <div className="chip">Qt</div>
+                                                <div className="chip">Nodejs Frameworks</div>
+                                                <div className="chip">Reactjs</div>
+                                            </CardText>
+                                        </Card>
+                                    </Row>
+                                </Col>
+                            </Container>
+                            </CardBlock>
                     </Card>
-                    <Card>
+                    <Card >
                         <CardBlock>
                                 <img src={me} className="img-circle me" />
                         </CardBlock>
@@ -43,7 +72,7 @@ const AboutMe = (props) => {
                             </div>
                         </CardBlock>
                     </Card>
-                    <Card>
+                    <Card >
                         <CardBlock>
                             <CardTitle>Details</CardTitle>
                             <ListGroup className="list">
@@ -51,6 +80,7 @@ const AboutMe = (props) => {
                                 <ListGroupItem className="list"><b>Age</b>  :  21</ListGroupItem>
                                 <ListGroupItem className="list"><b>Current Status</b>  :  Student</ListGroupItem>
                                 <ListGroupItem className="list"><b>College : </b>Delhi Technological University</ListGroupItem>
+                                <ListGroupItem className="list"><b>Email : </b>rahulyadav170923@gmail.com</ListGroupItem>
                             </ListGroup>
                         </CardBlock>
                         </Card>
